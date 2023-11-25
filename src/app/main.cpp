@@ -55,6 +55,16 @@
 Q_IMPORT_PLUGIN( opensslPlugin )
 #endif
 
+#if defined( Q_OS_DARWIN )
+#include <QtPlugin>
+Q_IMPORT_PLUGIN( QDarwinCameraPermissionPlugin )
+Q_IMPORT_PLUGIN( QDarwinMicrophonePermissionPlugin )
+Q_IMPORT_PLUGIN( QDarwinBluetoothPermissionPlugin )
+Q_IMPORT_PLUGIN( QDarwinContactsPermissionPlugin )
+Q_IMPORT_PLUGIN( QDarwinCalendarPermissionPlugin )
+Q_IMPORT_PLUGIN( QDarwinLocationPermissionPlugin )
+#endif
+
 void initGraphics()
 {
 #ifdef WITH_SPIX
