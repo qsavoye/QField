@@ -1201,6 +1201,7 @@ ApplicationWindow {
 
     LocatorItem {
       id: locatorItem
+      objectName: "locatorItem"
 
       locatorModelSuperBridge.navigation: navigation
       locatorModelSuperBridge.bookmarks: bookmarkModel
