@@ -157,6 +157,13 @@
     </message>
 </context>
 <context>
+    <name>Binary</name>
+    <message>
+        <source>(Blob)</source>
+        <translation type="unfinished"/>
+    </message>
+</context>
+<context>
     <name>BluetoothDeviceChooser</name>
     <message>
         <source>Positioning device in use:</source>
@@ -586,6 +593,49 @@ Cancel to make a minimal device scan instead.</source>
     <message>
         <source>Item Menu</source>
         <translation>Élément du menu</translation>
+    </message>
+</context>
+<context>
+    <name>EgenioussReceiver</name>
+    <message>
+        <source>Successfully connected</source>
+        <translation>Connexion réussie</translation>
+    </message>
+    <message>
+        <source>Disconnected</source>
+        <translation>Déconnecté</translation>
+    </message>
+    <message>
+        <source>Received data is too short to process</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <source>Invalid start byte</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <source>Received data is too short to contain the payload</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <source>Failed to parse JSON</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <source>Could not find the remote host</source>
+        <translation>Impossible de trouver l&apos;hôte distant</translation>
+    </message>
+    <message>
+        <source>Attempt to read or write from socket returned an error</source>
+        <translation>Une tentative de lecture ou d&apos;écriture à partir du socket a renvoyé une erreur</translation>
+    </message>
+    <message>
+        <source>The connection was refused by the remote host</source>
+        <translation>La connexion a été refusée par l&apos;hôte distant</translation>
+    </message>
+    <message>
+        <source>TCP receiver error (%1)</source>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
@@ -1921,6 +1971,10 @@ Les géométries des objets vont être combinées dans l&apos;objet &apos;%1&apo
         <source>Serial port (NMEA)</source>
         <translation>Port série (NMEA)</translation>
     </message>
+    <message>
+        <source>Egeniouss</source>
+        <translation type="unfinished"/>
+    </message>
 </context>
 <context>
     <name>PositioningInformationModel</name>
@@ -2924,6 +2978,10 @@ Même si vous pouvez toujours voir et utiliser ce projet, il est fortement recom
         <source>Remove from favorites</source>
         <translation type="unfinished"/>
     </message>
+    <message>
+        <source>Files</source>
+        <translation type="unfinished"/>
+    </message>
 </context>
 <context>
     <name>QFieldSettings</name>
@@ -3752,11 +3810,15 @@ Cancel to make a minimal device scan instead.</source>
     </message>
     <message>
         <source>UDP receiver error (%1)</source>
-        <translation>Erreur de récepteur UDP (%1)</translation>
+        <translation type="vanished">Erreur de récepteur UDP (%1)</translation>
     </message>
     <message>
         <source>The connection was refused by the remote host</source>
         <translation>La connexion a été refusée par l&apos;hôte distant</translation>
+    </message>
+    <message>
+        <source>TCP receiver error (%1)</source>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>

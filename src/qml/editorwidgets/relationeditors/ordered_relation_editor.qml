@@ -105,7 +105,7 @@ EditorWidgetBase {
           enabled: constraintsHardValid
 
           round: false
-          iconSource: Theme.getThemeIcon('ic_add_white_24dp')
+          iconSource: Theme.getThemeVectorIcon('ic_add_white_24dp')
           bgcolor: parent.enabled ? nmRelationId ? 'blue' : 'black' : 'grey'
         }
       }
@@ -131,7 +131,7 @@ EditorWidgetBase {
         repeat: false
 
         onTriggered: {
-          let saved = save();
+          let saved = form.state === 'Add' ? save() : true;
           if (ProjectUtils.transactionMode(qgisProject) !== Qgis.TransactionMode.Disabled) {
             // When a transaction mode is enabled, we must fallback to saving the parent feature to have provider-side issues
             if (!saved) {
@@ -251,7 +251,7 @@ EditorWidgetBase {
 
           Image {
             id: featureImage
-            source: ImagePath ? UrlUtils.fromString(ImagePath) : Theme.getThemeIcon("ic_photo_notavailable_black_24dp")
+            source: ImagePath ? UrlUtils.fromString(ImagePath) : Theme.getThemeVectorIcon("ic_photo_notavailable_black_24dp")
             width: parent.height
             height: parent.height
             fillMode: Image.PreserveAspectFit
@@ -275,7 +275,7 @@ EditorWidgetBase {
             height: 40
 
             round: false
-            iconSource: isEnabled ? Theme.getThemeVectorIcon('ic_edit_attributes_white-24dp') : Theme.getThemeVectorIcon('ic_baseline-list_alt-24dp')
+            iconSource: isEnabled ? Theme.getThemeVectorIcon('ic_edit_attributes_white_24dp') : Theme.getThemeVectorIcon('ic_baseline-list_white_24dp')
             iconColor: Theme.mainTextColor
             bgcolor: 'transparent'
 
@@ -337,7 +337,7 @@ EditorWidgetBase {
             height: 40
 
             round: false
-            iconSource: Theme.getThemeIcon('ic_delete_forever_white_24dp')
+            iconSource: Theme.getThemeVectorIcon('ic_delete_forever_white_24dp')
             iconColor: Theme.mainTextColor
             bgcolor: 'transparent'
 
@@ -373,6 +373,14 @@ EditorWidgetBase {
         }
       }
     }
+  }
+
+  BusyIndicator {
+    id: busyIndicator
+    anchors.centerIn: parent
+    width: 36
+    height: 36
+    running: orderedRelationModel.isLoading
   }
 
   Dialog {
@@ -412,14 +420,6 @@ EditorWidgetBase {
     onRejected: {
       visible = false;
     }
-  }
-
-  BusyIndicator {
-    id: busyIndicator
-    anchors.centerIn: parent
-    width: 36
-    height: 36
-    running: orderedRelationModel.isLoading
   }
 
   EmbeddedFeatureForm {

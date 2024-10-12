@@ -157,6 +157,13 @@
     </message>
 </context>
 <context>
+    <name>Binary</name>
+    <message>
+        <source>(Blob)</source>
+        <translation type="unfinished"/>
+    </message>
+</context>
+<context>
     <name>BluetoothDeviceChooser</name>
     <message>
         <source>Positioning device in use:</source>
@@ -587,6 +594,49 @@ Zrušte pro jen minimální skenování zařízení. </translation>
     <message>
         <source>Item Menu</source>
         <translation>Menu Položky</translation>
+    </message>
+</context>
+<context>
+    <name>EgenioussReceiver</name>
+    <message>
+        <source>Successfully connected</source>
+        <translation>Úspěšně připojeno</translation>
+    </message>
+    <message>
+        <source>Disconnected</source>
+        <translation>Odpojeno</translation>
+    </message>
+    <message>
+        <source>Received data is too short to process</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <source>Invalid start byte</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <source>Received data is too short to contain the payload</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <source>Failed to parse JSON</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <source>Could not find the remote host</source>
+        <translation>Vzdálený hostitel nenalezen</translation>
+    </message>
+    <message>
+        <source>Attempt to read or write from socket returned an error</source>
+        <translation>Pokus o čtení nebo zápis z/do socketu vrátil chybu</translation>
+    </message>
+    <message>
+        <source>The connection was refused by the remote host</source>
+        <translation>Připojení bylo odmítnuto vzdáleným hostitelem</translation>
+    </message>
+    <message>
+        <source>TCP receiver error (%1)</source>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
@@ -1924,6 +1974,10 @@ Geometrie objektů budou zkombinovány do objektu &apos;%1&apos;, který si zach
         <source>Serial port (NMEA)</source>
         <translation>Sériový port (NMEA)</translation>
     </message>
+    <message>
+        <source>Egeniouss</source>
+        <translation type="unfinished"/>
+    </message>
 </context>
 <context>
     <name>PositioningInformationModel</name>
@@ -2929,6 +2983,10 @@ Projekt sice můžete stále prohlížet a používat, ale důrazně doporučuje
         <source>Remove from favorites</source>
         <translation type="unfinished"/>
     </message>
+    <message>
+        <source>Files</source>
+        <translation type="unfinished"/>
+    </message>
 </context>
 <context>
     <name>QFieldSettings</name>
@@ -3758,11 +3816,15 @@ Zrušte pro jen minimální skenování zařízení. </translation>
     </message>
     <message>
         <source>UDP receiver error (%1)</source>
-        <translation>Chyba UDP přijímače (%1)</translation>
+        <translation type="vanished">Chyba UDP přijímače (%1)</translation>
     </message>
     <message>
         <source>The connection was refused by the remote host</source>
         <translation>Připojení bylo odmítnuto vzdáleným hostitelem</translation>
+    </message>
+    <message>
+        <source>TCP receiver error (%1)</source>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>

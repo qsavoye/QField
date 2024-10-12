@@ -157,6 +157,13 @@
     </message>
 </context>
 <context>
+    <name>Binary</name>
+    <message>
+        <source>(Blob)</source>
+        <translation type="unfinished"/>
+    </message>
+</context>
+<context>
     <name>BluetoothDeviceChooser</name>
     <message>
         <source>Positioning device in use:</source>
@@ -585,6 +592,49 @@ Cancel to make a minimal device scan instead.</source>
     <name>EditorWidgetBase</name>
     <message>
         <source>Item Menu</source>
+        <translation type="unfinished"/>
+    </message>
+</context>
+<context>
+    <name>EgenioussReceiver</name>
+    <message>
+        <source>Successfully connected</source>
+        <translation>Uspješno povezan</translation>
+    </message>
+    <message>
+        <source>Disconnected</source>
+        <translation>Odpojeno</translation>
+    </message>
+    <message>
+        <source>Received data is too short to process</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <source>Invalid start byte</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <source>Received data is too short to contain the payload</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <source>Failed to parse JSON</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <source>Could not find the remote host</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <source>Attempt to read or write from socket returned an error</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <source>The connection was refused by the remote host</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <source>TCP receiver error (%1)</source>
         <translation type="unfinished"/>
     </message>
 </context>
@@ -1921,6 +1971,10 @@ Geometrija objekata će se kombinovati u objekat &apos;%1&apos;, koji će zadrž
         <source>Serial port (NMEA)</source>
         <translation type="unfinished"/>
     </message>
+    <message>
+        <source>Egeniouss</source>
+        <translation type="unfinished"/>
+    </message>
 </context>
 <context>
     <name>PositioningInformationModel</name>
@@ -2927,6 +2981,10 @@ Iako i dalje možete pregledati i koristiti ovaj projekat, strogo je preporučiv
         <source>Remove from favorites</source>
         <translation type="unfinished"/>
     </message>
+    <message>
+        <source>Files</source>
+        <translation type="unfinished"/>
+    </message>
 </context>
 <context>
     <name>QFieldSettings</name>
@@ -3759,6 +3817,10 @@ Cancel to make a minimal device scan instead.</source>
     </message>
     <message>
         <source>The connection was refused by the remote host</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <source>TCP receiver error (%1)</source>
         <translation type="unfinished"/>
     </message>
 </context>

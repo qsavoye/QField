@@ -157,6 +157,13 @@
     </message>
 </context>
 <context>
+    <name>Binary</name>
+    <message>
+        <source>(Blob)</source>
+        <translation>(Blob)</translation>
+    </message>
+</context>
+<context>
     <name>BluetoothDeviceChooser</name>
     <message>
         <source>Positioning device in use:</source>
@@ -587,6 +594,49 @@ Cancel to make a minimal device scan instead.</source>
     <message>
         <source>Item Menu</source>
         <translation>项菜单</translation>
+    </message>
+</context>
+<context>
+    <name>EgenioussReceiver</name>
+    <message>
+        <source>Successfully connected</source>
+        <translation>已成功连接</translation>
+    </message>
+    <message>
+        <source>Disconnected</source>
+        <translation>已断开</translation>
+    </message>
+    <message>
+        <source>Received data is too short to process</source>
+        <translation>接收的数据残缺，无法处理</translation>
+    </message>
+    <message>
+        <source>Invalid start byte</source>
+        <translation>始字节无效</translation>
+    </message>
+    <message>
+        <source>Received data is too short to contain the payload</source>
+        <translation>接收的数据残缺，无法包含有效载荷</translation>
+    </message>
+    <message>
+        <source>Failed to parse JSON</source>
+        <translation>解析JSON失败</translation>
+    </message>
+    <message>
+        <source>Could not find the remote host</source>
+        <translation>未找到远程主机</translation>
+    </message>
+    <message>
+        <source>Attempt to read or write from socket returned an error</source>
+        <translation>尝试从Socket读取或写入时返回错误</translation>
+    </message>
+    <message>
+        <source>The connection was refused by the remote host</source>
+        <translation>远程主机拒绝连接</translation>
+    </message>
+    <message>
+        <source>TCP receiver error (%1)</source>
+        <translation>TCP接收器错误 (%1)</translation>
     </message>
 </context>
 <context>
@@ -1918,6 +1968,10 @@ The features geometries will be combined into feature &apos;%1&apos;, which will
         <source>Serial port (NMEA)</source>
         <translation>串行端口 (NMEA)</translation>
     </message>
+    <message>
+        <source>Egeniouss</source>
+        <translation>Egeniouss</translation>
+    </message>
 </context>
 <context>
     <name>PositioningInformationModel</name>
@@ -2924,6 +2978,10 @@ While you can still view and use the project, it is strongly recommended to rese
         <source>Remove from favorites</source>
         <translation>从收藏夹中移除</translation>
     </message>
+    <message>
+        <source>Files</source>
+        <translation>文件</translation>
+    </message>
 </context>
 <context>
     <name>QFieldSettings</name>
@@ -3753,11 +3811,15 @@ Cancel to make a minimal device scan instead.</source>
     </message>
     <message>
         <source>UDP receiver error (%1)</source>
-        <translation>UDP接收器错误 (%1)</translation>
+        <translation type="vanished">UDP接收器错误 (%1)</translation>
     </message>
     <message>
         <source>The connection was refused by the remote host</source>
         <translation>远程主机拒绝连接</translation>
+    </message>
+    <message>
+        <source>TCP receiver error (%1)</source>
+        <translation>TCP接收器错误 (%1)</translation>
     </message>
 </context>
 <context>

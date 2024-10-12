@@ -157,6 +157,13 @@
     </message>
 </context>
 <context>
+    <name>Binary</name>
+    <message>
+        <source>(Blob)</source>
+        <translation type="unfinished"/>
+    </message>
+</context>
+<context>
     <name>BluetoothDeviceChooser</name>
     <message>
         <source>Positioning device in use:</source>
@@ -587,6 +594,49 @@ Anuluj, aby wykonać zamiast tego minimalne skanowanie urządzeń.</translation>
     <message>
         <source>Item Menu</source>
         <translation>Menu elementów</translation>
+    </message>
+</context>
+<context>
+    <name>EgenioussReceiver</name>
+    <message>
+        <source>Successfully connected</source>
+        <translation>Połączono pomyślnie</translation>
+    </message>
+    <message>
+        <source>Disconnected</source>
+        <translation>Rozłączono</translation>
+    </message>
+    <message>
+        <source>Received data is too short to process</source>
+        <translation>Odebrane dane są zbyt krótkie do przetworzenia</translation>
+    </message>
+    <message>
+        <source>Invalid start byte</source>
+        <translation>Nieprawidłowy bajt początkowy</translation>
+    </message>
+    <message>
+        <source>Received data is too short to contain the payload</source>
+        <translation>Odebrane dane są zbyt krótkie, aby pomieścić ładunek</translation>
+    </message>
+    <message>
+        <source>Failed to parse JSON</source>
+        <translation>Parsowanie JSON nie powiodło się</translation>
+    </message>
+    <message>
+        <source>Could not find the remote host</source>
+        <translation>Nie można odnaleźć zdalnego serwera</translation>
+    </message>
+    <message>
+        <source>Attempt to read or write from socket returned an error</source>
+        <translation>Błąd podczas próby odczytu lub zapisu do gniazda</translation>
+    </message>
+    <message>
+        <source>The connection was refused by the remote host</source>
+        <translation>Połączenie zostało odrzucone przez zdalny serwer</translation>
+    </message>
+    <message>
+        <source>TCP receiver error (%1)</source>
+        <translation>Błąd odbiornika TCP (%1)</translation>
     </message>
 </context>
 <context>
@@ -1924,6 +1974,10 @@ Geometrie elementów zostaną połączone w element &quot;%1&quot;, który zacho
         <source>Serial port (NMEA)</source>
         <translation>Port szeregowy (NMEA)</translation>
     </message>
+    <message>
+        <source>Egeniouss</source>
+        <translation>Egeniouss</translation>
+    </message>
 </context>
 <context>
     <name>PositioningInformationModel</name>
@@ -2930,6 +2984,10 @@ Chociaż nadal możesz wyświetlać i używać projektu, zdecydowanie zaleca si�
         <source>Remove from favorites</source>
         <translation>Usuń z ulubionych</translation>
     </message>
+    <message>
+        <source>Files</source>
+        <translation>Pliki</translation>
+    </message>
 </context>
 <context>
     <name>QFieldSettings</name>
@@ -3759,11 +3817,15 @@ Anuluj, aby wykonać zamiast tego minimalne skanowanie urządzeń.</translation>
     </message>
     <message>
         <source>UDP receiver error (%1)</source>
-        <translation>Błąd odbiornika UDP (%1)</translation>
+        <translation type="vanished">Błąd odbiornika UDP (%1)</translation>
     </message>
     <message>
         <source>The connection was refused by the remote host</source>
         <translation>Połączenie zostało odrzucone przez zdalny serwer</translation>
+    </message>
+    <message>
+        <source>TCP receiver error (%1)</source>
+        <translation>Błąd odbiornika TCP (%1)</translation>
     </message>
 </context>
 <context>

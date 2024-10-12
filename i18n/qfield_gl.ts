@@ -157,6 +157,13 @@
     </message>
 </context>
 <context>
+    <name>Binary</name>
+    <message>
+        <source>(Blob)</source>
+        <translation type="unfinished"/>
+    </message>
+</context>
+<context>
     <name>BluetoothDeviceChooser</name>
     <message>
         <source>Positioning device in use:</source>
@@ -587,6 +594,49 @@ Cancela para facer, porén, unha exploración mínima do dispositivo.</translati
     <message>
         <source>Item Menu</source>
         <translation>Menú do Elemento</translation>
+    </message>
+</context>
+<context>
+    <name>EgenioussReceiver</name>
+    <message>
+        <source>Successfully connected</source>
+        <translation>Correctamente conectado</translation>
+    </message>
+    <message>
+        <source>Disconnected</source>
+        <translation>Desconectado</translation>
+    </message>
+    <message>
+        <source>Received data is too short to process</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <source>Invalid start byte</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <source>Received data is too short to contain the payload</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <source>Failed to parse JSON</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <source>Could not find the remote host</source>
+        <translation>Non se puido atopar o servidor remoto</translation>
+    </message>
+    <message>
+        <source>Attempt to read or write from socket returned an error</source>
+        <translation>A tentativa de lectura ou escritura do socket devolveu un erro</translation>
+    </message>
+    <message>
+        <source>The connection was refused by the remote host</source>
+        <translation>Rexeitouse a conexión polo hospedador remoto</translation>
+    </message>
+    <message>
+        <source>TCP receiver error (%1)</source>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
@@ -1920,6 +1970,10 @@ As xeometrías das entidades combinaranse na entidade &apos;%1&apos;, a cal cons
         <source>Serial port (NMEA)</source>
         <translation>Porto serie (NMEA)</translation>
     </message>
+    <message>
+        <source>Egeniouss</source>
+        <translation type="unfinished"/>
+    </message>
 </context>
 <context>
     <name>PositioningInformationModel</name>
@@ -2926,6 +2980,10 @@ Aínda que podes seguir vendo e utilizando este proxecto, recoméndase fortement
         <source>Remove from favorites</source>
         <translation>Eliminar de favoritos</translation>
     </message>
+    <message>
+        <source>Files</source>
+        <translation type="unfinished"/>
+    </message>
 </context>
 <context>
     <name>QFieldSettings</name>
@@ -3755,11 +3813,15 @@ Cancela para facer, porén, unha exploración mínima do dispositivo.</translati
     </message>
     <message>
         <source>UDP receiver error (%1)</source>
-        <translation>Erro de recepción UDP (%1)</translation>
+        <translation type="vanished">Erro de recepción UDP (%1)</translation>
     </message>
     <message>
         <source>The connection was refused by the remote host</source>
         <translation>Rexeitouse a conexión polo hospedador remoto</translation>
+    </message>
+    <message>
+        <source>TCP receiver error (%1)</source>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>

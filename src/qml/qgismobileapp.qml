@@ -244,6 +244,7 @@ ApplicationWindow {
 
   PositioningSettings {
     id: positioningSettings
+    objectName: "positioningSettings"
 
     onPositioningActivatedChanged: {
       if (positioningActivated) {
@@ -576,6 +577,11 @@ ApplicationWindow {
           // The next press will be intentional to close the form.
           overlayFeatureFormDrawer.closePolicy = Popup.CloseOnEscape | Popup.CloseOnPressOutside;
         }
+      }
+
+      GridRenderer {
+        id: gridDecoration
+        mapSettings: mapCanvas.mapSettings
       }
     }
 
@@ -1169,7 +1175,7 @@ ApplicationWindow {
         anchors.right: parent.right
 
         bgcolor: Theme.darkGray
-        iconSource: Theme.getThemeIcon("ic_add_white_24dp")
+        iconSource: Theme.getThemeVectorIcon("ic_add_white_24dp")
 
         width: 36
         height: 36
@@ -1186,7 +1192,7 @@ ApplicationWindow {
         anchors.right: parent.right
 
         bgcolor: Theme.darkGray
-        iconSource: Theme.getThemeIcon("ic_remove_white_24dp")
+        iconSource: Theme.getThemeVectorIcon("ic_remove_white_24dp")
 
         width: 36
         height: 36
@@ -1255,7 +1261,7 @@ ApplicationWindow {
       QfToolButton {
         id: menuButton
         round: true
-        iconSource: Theme.getThemeIcon("ic_menu_white_24dp")
+        iconSource: Theme.getThemeVectorIcon("ic_menu_white_24dp")
         bgcolor: dashBoard.opened ? Theme.mainColor : Theme.darkGray
 
         onClicked: dashBoard.opened ? dashBoard.close() : dashBoard.open()
@@ -1286,7 +1292,7 @@ ApplicationWindow {
       QfCloseButton {
         id: abortRequestGeometry
         visible: digitizingToolbar.geometryRequested
-        toolImage: Theme.getThemeIcon("ic_edit_geometry_white")
+        toolImage: Theme.getThemeVectorIcon("ic_edit_geometry_white_24dp")
         toolText: qsTr('Cancel addition')
 
         onClose: digitizingToolbar.cancel()
@@ -1616,7 +1622,8 @@ ApplicationWindow {
         anchors.right: parent.right
 
         property bool isFollowLocationActive: positionSource.active && gnssButton.followActive && followIncludeDestination
-        iconSource: isFollowLocationActive ? Theme.getThemeIcon("ic_navigation_flag_white_24dp") : Theme.getThemeIcon("ic_navigation_flag_purple_24dp")
+        iconSource: Theme.getThemeVectorIcon("ic_navigation_flag_purple_24dp")
+        iconColor: isFollowLocationActive ? "white" : Theme.navigationColor
         bgcolor: isFollowLocationActive ? Theme.navigationColor : Theme.darkGray
 
         /*
@@ -1658,7 +1665,7 @@ ApplicationWindow {
             name: "Off"
             PropertyChanges {
               target: gnssLockButton
-              iconSource: Theme.getThemeIcon("ic_gps_link_white_24dp")
+              iconSource: Theme.getThemeVectorIcon("ic_location_locked_white_24dp")
               bgcolor: Theme.darkGraySemiOpaque
             }
           },
@@ -1666,7 +1673,8 @@ ApplicationWindow {
             name: "On"
             PropertyChanges {
               target: gnssLockButton
-              iconSource: Theme.getThemeIcon("ic_gps_link_activated_white_24dp")
+              iconSource: Theme.getThemeVectorIcon("ic_location_locked_active_white_24dp")
+              iconColor: Theme.positionColor
               bgcolor: Theme.darkGray
             }
           }
@@ -2639,7 +2647,7 @@ ApplicationWindow {
     MenuItem {
       id: addBookmarkItem
       text: qsTr("Add Bookmark")
-      icon.source: Theme.getThemeIcon("ic_bookmark_black_24dp")
+      icon.source: Theme.getThemeVectorIcon("ic_bookmark_black_24dp")
       height: 48
       leftPadding: Theme.menuItemLeftPadding
       font: Theme.defaultFont
@@ -2660,7 +2668,7 @@ ApplicationWindow {
     MenuItem {
       id: setDestinationItem
       text: qsTr("Set as Destination")
-      icon.source: Theme.getThemeIcon("ic_navigation_flag_purple_24dp")
+      icon.source: Theme.getThemeVectorIcon("ic_navigation_flag_purple_24dp")
       height: 48
       leftPadding: Theme.menuItemLeftPadding
       font: Theme.defaultFont
@@ -2761,7 +2769,7 @@ ApplicationWindow {
         MenuItem {
           text: qsTr('Open Feature Form')
           font: Theme.defaultFont
-          icon.source: Theme.getThemeIcon("ic_baseline-list_alt-24px")
+          icon.source: Theme.getThemeVectorIcon("ic_baseline-list_white_24dp")
           leftPadding: Theme.menuItemLeftPadding
 
           onTriggered: {
@@ -3149,7 +3157,7 @@ ApplicationWindow {
 
     MenuItem {
       text: qsTr("Add Bookmark at Location")
-      icon.source: Theme.getThemeIcon("ic_bookmark_black_24dp")
+      icon.source: Theme.getThemeVectorIcon("ic_bookmark_black_24dp")
       height: 48
       leftPadding: Theme.menuItemLeftPadding
       font: Theme.defaultFont
@@ -3366,7 +3374,7 @@ ApplicationWindow {
       dashBoard.activeLayer = activeLayer;
       drawingTemplateModel.projectFilePath = path;
       mapCanvasBackground.color = mapCanvas.mapSettings.backgroundColor;
-      let titleDecorationConfiguration = projectInfo.getTitleDecorationConfiguration();
+      const titleDecorationConfiguration = projectInfo.getTitleDecorationConfiguration();
       titleDecoration.color = titleDecorationConfiguration["color"];
       titleDecoration.style = titleDecorationConfiguration["hasOutline"] === true ? Text.Outline : Text.Normal;
       titleDecoration.styleColor = titleDecorationConfiguration["outlineColor"];
@@ -3375,7 +3383,7 @@ ApplicationWindow {
       if (!titleDecoration.isExpressionTemplate) {
         titleDecoration.text = titleDecorationConfiguration["text"];
       }
-      let copyrightDecorationConfiguration = projectInfo.getCopyrightDecorationConfiguration();
+      const copyrightDecorationConfiguration = projectInfo.getCopyrightDecorationConfiguration();
       copyrightDecoration.color = copyrightDecorationConfiguration["color"];
       copyrightDecoration.style = copyrightDecorationConfiguration["hasOutline"] === true ? Text.Outline : Text.Normal;
       copyrightDecoration.styleColor = copyrightDecorationConfiguration["outlineColor"];
@@ -3384,10 +3392,22 @@ ApplicationWindow {
       if (!titleDecoration.isExpressionTemplate) {
         copyrightDecoration.text = copyrightDecorationConfiguration["text"];
       }
-      let imageDecorationConfiguration = projectInfo.getImageDecorationConfiguration();
+      const imageDecorationConfiguration = projectInfo.getImageDecorationConfiguration();
       imageDecoration.source = imageDecorationConfiguration["source"];
       imageDecoration.fillColor = imageDecorationConfiguration["fillColor"];
       imageDecoration.strokeColor = imageDecorationConfiguration["strokeColor"];
+      const gridDecorationConfiguration = projectInfo.getGridDecorationConfiguration();
+      gridDecoration.enabled = false;
+      gridDecoration.prepareLines = gridDecorationConfiguration["hasLines"];
+      gridDecoration.lineColor = gridDecorationConfiguration["lineColor"];
+      gridDecoration.prepareMarkers = gridDecorationConfiguration["hasMarkers"];
+      gridDecoration.markerColor = gridDecorationConfiguration["markerColor"];
+      gridDecoration.prepareAnnotations = gridDecorationConfiguration["hasAnnotations"];
+      gridDecoration.annotationPrecision = gridDecorationConfiguration["annotationPrecision"];
+      gridDecoration.annotationColor = gridDecorationConfiguration["annotationColor"];
+      gridDecoration.annotationHasOutline = gridDecorationConfiguration["annotationHasOutline"];
+      gridDecoration.annotationOutlineColor = gridDecorationConfiguration["annotationOutlineColor"];
+      gridDecoration.enabled = gridDecorationConfiguration["hasLines"] || gridDecorationConfiguration["hasMarkers"];
       recentProjectListModel.reloadModel();
       const cloudProjectId = QFieldCloudUtils.getProjectId(qgisProject.fileName);
       cloudProjectsModel.currentProjectId = cloudProjectId;
@@ -3828,11 +3848,16 @@ ApplicationWindow {
   Changelog {
     id: changelogPopup
     objectName: 'changelogPopup'
-
     parent: Overlay.overlay
 
-    property var expireDate: new Date(2038, 1, 19)
-    visible: settings && settings.value("/QField/ChangelogVersion", "") !== appVersion && expireDate > new Date()
+    Component.onCompleted: {
+      const changelogVersion = settings.value("/QField/ChangelogVersion", "");
+      if (changelogVersion === "") {
+        settings.setValue("/QField/ChangelogVersion", appVersion);
+      } else if (changelogVersion !== appVersion) {
+        open();
+      }
+    }
   }
 
   Toast {

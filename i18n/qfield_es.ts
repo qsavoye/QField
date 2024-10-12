@@ -157,6 +157,13 @@
     </message>
 </context>
 <context>
+    <name>Binary</name>
+    <message>
+        <source>(Blob)</source>
+        <translation type="unfinished"/>
+    </message>
+</context>
+<context>
     <name>BluetoothDeviceChooser</name>
     <message>
         <source>Positioning device in use:</source>
@@ -587,6 +594,49 @@ Cancele para hacer una búsqueda mínima de dispositivos en su lugar.</translati
     <message>
         <source>Item Menu</source>
         <translation>Menú Elemento</translation>
+    </message>
+</context>
+<context>
+    <name>EgenioussReceiver</name>
+    <message>
+        <source>Successfully connected</source>
+        <translation>Conectado con éxito</translation>
+    </message>
+    <message>
+        <source>Disconnected</source>
+        <translation>Desconectado</translation>
+    </message>
+    <message>
+        <source>Received data is too short to process</source>
+        <translation>Los datos recibidos son demasiado cortos para procesarlos</translation>
+    </message>
+    <message>
+        <source>Invalid start byte</source>
+        <translation>Byte de inicio no válido</translation>
+    </message>
+    <message>
+        <source>Received data is too short to contain the payload</source>
+        <translation>Los datos recibidos son demasiado cortos para contener los datos</translation>
+    </message>
+    <message>
+        <source>Failed to parse JSON</source>
+        <translation>No se pudo procesar JSON</translation>
+    </message>
+    <message>
+        <source>Could not find the remote host</source>
+        <translation>No se pudo encontrar el host remoto</translation>
+    </message>
+    <message>
+        <source>Attempt to read or write from socket returned an error</source>
+        <translation>El intento de leer o escribir desde el socket devolvió un error</translation>
+    </message>
+    <message>
+        <source>The connection was refused by the remote host</source>
+        <translation>La conexión fue rechazada por el host remoto</translation>
+    </message>
+    <message>
+        <source>TCP receiver error (%1)</source>
+        <translation>Error de receptor TCP (%1)</translation>
     </message>
 </context>
 <context>
@@ -1347,7 +1397,7 @@ Las geometrías de los objetos se combinarán en el objeto &apos;%1&apos;, que c
     </message>
     <message>
         <source>Returns QField documentation pages matching terms.</source>
-        <translation>Devuelve las páginas de la documentación de QField con los términos que coincidan</translation>
+        <translation>Devuelve las páginas de la documentación de QField con los términos que coincidan.</translation>
     </message>
 </context>
 <context>
@@ -1358,7 +1408,7 @@ Las geometrías de los objetos se combinarán en el objeto &apos;%1&apos;, que c
     </message>
     <message>
         <source>To search features within the active layer, select a vector layer through the legend.</source>
-        <translation>Para buscar objetos en la capa activa seleccione una capa vectorial en la leyenda.</translation>
+        <translation>Para buscar objetos en la capa activa, seleccione una capa vectorial en la leyenda.</translation>
     </message>
     <message>
         <source>Activate a vector layer in the legend first to use this functionality</source>
@@ -1922,6 +1972,10 @@ Las geometrías de los objetos se combinarán en el objeto &apos;%1&apos;, que c
         <source>Serial port (NMEA)</source>
         <translation>Puerto serial (NMEA)</translation>
     </message>
+    <message>
+        <source>Egeniouss</source>
+        <translation type="unfinished"/>
+    </message>
 </context>
 <context>
     <name>PositioningInformationModel</name>
@@ -1963,15 +2017,15 @@ Las geometrías de los objetos se combinarán en el objeto &apos;%1&apos;, que c
     </message>
     <message>
         <source>grid</source>
-        <translation type="unfinished"/>
+        <translation>cuadrícula</translation>
     </message>
     <message>
         <source>ortho.</source>
-        <translation type="unfinished"/>
+        <translation>orto.</translation>
     </message>
     <message>
         <source>ant.</source>
-        <translation type="unfinished"/>
+        <translation>ant.</translation>
     </message>
 </context>
 <context>
@@ -2128,15 +2182,15 @@ Las geometrías de los objetos se combinarán en el objeto &apos;%1&apos;, que c
     </message>
     <message>
         <source>Details stamping enabled</source>
-        <translation type="unfinished"/>
+        <translation>Marcado de detalles habilitado</translation>
     </message>
     <message>
         <source>Latitude</source>
-        <translation type="unfinished"/>
+        <translation>Latitud</translation>
     </message>
     <message>
         <source>Longitude</source>
-        <translation type="unfinished"/>
+        <translation>Longitud</translation>
     </message>
     <message>
         <source>Altitude</source>
@@ -2148,11 +2202,11 @@ Las geometrías de los objetos se combinarán en el objeto &apos;%1&apos;, que c
     </message>
     <message>
         <source>Orientation</source>
-        <translation type="unfinished"/>
+        <translation>Orientación</translation>
     </message>
     <message>
         <source>Details stamping disabled</source>
-        <translation type="unfinished"/>
+        <translation>Marcado de detalles deshabilitado</translation>
     </message>
 </context>
 <context>
@@ -2253,7 +2307,7 @@ Las geometrías de los objetos se combinarán en el objeto &apos;%1&apos;, que c
     </message>
     <message>
         <source>Sign in</source>
-        <translation>Registrarse</translation>
+        <translation>Iniciar sesión</translation>
     </message>
     <message>
         <source>New user?</source>
@@ -2920,11 +2974,15 @@ While you can still view and use the project, it is strongly recommended to rese
     </message>
     <message>
         <source>Add to favorites</source>
-        <translation type="unfinished"/>
+        <translation>Añadir a favoritos</translation>
     </message>
     <message>
         <source>Remove from favorites</source>
-        <translation type="unfinished"/>
+        <translation>Eliminar de favoritos</translation>
+    </message>
+    <message>
+        <source>Files</source>
+        <translation>Archivos</translation>
     </message>
 </context>
 <context>
@@ -3345,19 +3403,19 @@ Cancelar para hacer una búsqueda mínima de dispositivos en su lugar.</translat
     </message>
     <message>
         <source>Bad accuracy threshold [m]</source>
-        <translation type="unfinished"/>
+        <translation>Umbral de precisión malo [m]</translation>
     </message>
     <message>
         <source>Excellent accuracy threshold [m]</source>
-        <translation type="unfinished"/>
+        <translation>Umbral de precisión excelente [m]</translation>
     </message>
     <message>
         <source>Enforce accuracy requirement</source>
-        <translation type="unfinished"/>
+        <translation>Forzar requerimiento de precisión</translation>
     </message>
     <message>
         <source>When the accuracy indicator is enabled, a badge is attached to the location button and colored &lt;span %1&gt;red&lt;/span&gt; if the accuracy value is worse than &lt;i&gt;bad&lt;/i&gt;, &lt;span %2&gt;yellow&lt;/span&gt; if it falls short of &lt;i&gt;excellent&lt;/i&gt;, or &lt;span %3&gt;green&lt;/span&gt;.&lt;br&gt;&lt;br&gt;In addition, an accuracy restriction mode can be toggled on, which restricts vertex addition when locked to coordinate cursor to positions with an accuracy value worse than the bad threshold.</source>
-        <translation type="unfinished"/>
+        <translation>Cuando el indicador de precisión está activado, se adjunta una marca al botón de localización y se colorea en &lt;span %1&gt;rojo&lt;/span&gt;  si el valor de precisión es peor que &lt;i&gt;malo&lt;/i&gt;, &lt;span %2&gt;amarillo&lt;/span&gt;si no llega a &lt;i&gt;excelente&lt;/i&gt;, o &lt;span %3&gt;verde&lt;/span&gt;.&lt;br&gt;&lt;br&gt;Además, se puede activar un modo de restricción de precisión, que restringe la adición de vértices cuando está bloqueado a las coordenadas del cursor a posiciones con una precisión por encima del umbral malo.</translation>
     </message>
 </context>
 <context>
@@ -3755,11 +3813,15 @@ Cancelar para hacer una búsqueda mínima de dispositivos en su lugar.</translat
     </message>
     <message>
         <source>UDP receiver error (%1)</source>
-        <translation>Error del receptor UDP (%1)</translation>
+        <translation type="vanished">Error del receptor UDP (%1)</translation>
     </message>
     <message>
         <source>The connection was refused by the remote host</source>
         <translation>La conexión fue rechazada por el host remoto</translation>
+    </message>
+    <message>
+        <source>TCP receiver error (%1)</source>
+        <translation>Error de receptor TCP (%1)</translation>
     </message>
 </context>
 <context>
@@ -4154,11 +4216,11 @@ Cancelar para hacer una búsqueda mínima de dispositivos en su lugar.</translat
     </message>
     <message>
         <source>Global variables</source>
-        <translation type="unfinished"/>
+        <translation>Variables globales</translation>
     </message>
     <message>
         <source>Project variables</source>
-        <translation type="unfinished"/>
+        <translation>Variables del proyecto</translation>
     </message>
 </context>
 <context>
@@ -4283,7 +4345,7 @@ Cancelar para hacer una búsqueda mínima de dispositivos en su lugar.</translat
     </message>
     <message>
         <source>That&apos;s great! We&apos;d love for you to click on the button below and leave a review.</source>
-        <translation type="unfinished"/>
+        <translation>¡Eso es genial! Nos encantaría que pulsara el botón de abajo y dejara un comentario.</translation>
     </message>
 </context>
 <context>
