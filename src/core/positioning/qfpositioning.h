@@ -414,6 +414,11 @@ class QfPositioning : public QObject
   private:
     void setupSource();
     bool isSourceAvailable() const;
+    QObject *sourceObject() const;
+    QVariant sourceProperty( const char *name ) const;
+    bool setSourceProperty( const char *name, const QVariant &value );
+    void wireSourceSignals( QObject *source );
+    void applyCachedPropertiesToSource();
 
     void processProjectedPosition();
     double adjustOrientation( double orientation ) const;
